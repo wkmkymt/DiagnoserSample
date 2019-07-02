@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "extends": [
+    "standard",
+    "plugin:vue/essential",
+    "plugin:prettier/recommended"
+  ],
+  "plugins": ["vue"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      {
+        "useTabs": false,
+        "printWidth": 100,
+        "tabWidth": 2,
+        "singleQuote": true,
+        "semi": false,
+        "arrowParens": "always",
+        "trailingComma": "none",
+        "jsxBracketSameLine": false
+      }
+    ]
+  }
+}

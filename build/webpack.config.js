@@ -1,46 +1,46 @@
-// Require 
-const path = require("path")
+// Require
+const path = require('path')
 
 // Plugin
-const CopyWebpackPlugin = require("copy-webpack-plugin")
-const { CleanWebpackPlugin } = require("clean-webpack-plugin")
-const { VueLoaderPlugin } = require("vue-loader")
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const { CleanWebpackPlugin } = require('clean-webpack-plugin')
+const { VueLoaderPlugin } = require('vue-loader')
 
 // Valiable
 const pathes = {
-  src: path.resolve(__dirname, "../src"),
-  entry: path.resolve(__dirname, "../src/index.js"),
-  dist: path.resolve(__dirname, "../dist"),
-  public: path.resolve(__dirname, "../public"),
-  index: path.resolve(__dirname, "../public/index.html"),
+  src: path.resolve(__dirname, '../src'),
+  entry: path.resolve(__dirname, '../src/index.js'),
+  dist: path.resolve(__dirname, '../dist'),
+  public: path.resolve(__dirname, '../public'),
+  index: path.resolve(__dirname, '../public/index.html')
 }
 
 // Main
 module.exports = {
-  mode: "development",
-  devtool: "inline-source-map",
+  mode: 'development',
+  devtool: 'inline-source-map',
 
   entry: pathes.entry,
   output: {
     path: pathes.dist,
-    filename: "bundle.js",
-    publicPath: "/"
+    filename: 'bundle.js',
+    publicPath: '/'
   },
 
   module: {
     rules: [
       {
         test: /\.vue$/,
-        loader: "vue-loader"
+        loader: 'vue-loader'
       },
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        loader: "babel-loader"
+        loader: 'babel-loader'
       },
       {
         test: /\.css$/,
-        loader: ["vue-style-loader", "css-loader"]
+        loader: ['vue-style-loader', 'css-loader']
       }
     ]
   },
@@ -57,16 +57,16 @@ module.exports = {
   ],
 
   resolve: {
-    modules: ["node_modules"],
+    modules: ['node_modules'],
     alias: {
-      "vue$": "vue/dist/vue.esm.js"
+      vue$: 'vue/dist/vue.esm.js'
     },
-    extensions: [".js", ".vue"]
+    extensions: ['.js', '.vue']
   },
 
   devServer: {
     contentBase: pathes.public,
     watchContentBase: true,
-    open: true,
+    open: true
   }
 }
