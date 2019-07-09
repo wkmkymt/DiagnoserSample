@@ -1,11 +1,12 @@
 {
   "root": true,
-  "extends": [
-    "standard",
-    "plugin:vue/essential",
-    "plugin:prettier/recommended"
-  ],
-  "plugins": ["vue"],
+  "env": {
+    "node": true
+  },
+  "extends": ["plugin:vue/essential", "@vue/prettier"],
+  "parserOptions": {
+    "parser": "babel-eslint"
+  },
   "rules": {
     "prettier/prettier": [
       "error",
