@@ -68,6 +68,7 @@ module.exports = {
   devServer: {
     contentBase: pathes.public,
     watchContentBase: true,
-    open: true
+    open: true,
+    historyApiFallback: true
   }
 }

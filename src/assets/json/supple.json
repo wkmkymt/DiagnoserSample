@@ -1,0 +1,27 @@
+[
+  {
+    "id": 0,
+    "name": "サプリA",
+    "description": "サプリAです"
+  },
+  {
+    "id": 1,
+    "name": "サプリB",
+    "description": "サプリBです"
+  },
+  {
+    "id": 2,
+    "name": "サプリC",
+    "description": "サプリCです"
+  },
+  {
+    "id": 3,
+    "name": "サプリD",
+    "description": "サプリDです"
+  },
+  {
+    "id": 4,
+    "name": "サプリE",
+    "description": "サプリEです"
+  }
+]
