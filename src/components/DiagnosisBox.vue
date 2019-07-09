@@ -169,12 +169,12 @@ export default {
 
 .left-enter-active,
 .right-enter-active {
-  transition: all 1s ease 0s;
+  transition: all 0.4s ease 0s;
 }
 
 .left-leave-active,
 .right-leave-active {
-  transition: all 0.3s ease 0s;
+  transition: all 0.2s ease 0s;
 }
 
 .left-leave,
