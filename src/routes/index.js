@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import ViewPage from '@/pages/_view'
-import IndexPage from '@/pages/index'
-import DiagnosisPage from '@/pages/diagnosis'
-import ResultPage from '@/pages/result'
+import IndexView from '@/views/_View'
+import HomeView from '@/views/Home'
+import DiagnosisView from '@/views/Diagnosis'
+import ResultView from '@/views/Result'
 
 Vue.use(VueRouter)
 
@@ -13,22 +13,22 @@ export default new VueRouter({
   routes: [
     {
       path: '/',
-      component: ViewPage,
+      component: IndexView,
       children: [
         {
-          path: '',
-          name: 'top',
-          component: IndexPage
+          path: '/',
+          name: 'home',
+          component: HomeView
         },
         {
-          path: 'diagnosis',
+          path: '/diagnosis',
           name: 'diagnosis',
-          component: DiagnosisPage
+          component: DiagnosisView
         },
         {
-          path: 'result',
+          path: '/result',
           name: 'result',
-          component: ResultPage
+          component: ResultView
         }
       ]
     }
