@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import ViewPage from '~/pages/_view'
-import IndexPage from '~/pages/index'
-import DiagnosisPage from '~/pages/diagnosis'
-import ResultPage from '~/pages/result'
+import ViewPage from '@/pages/_view'
+import IndexPage from '@/pages/index'
+import DiagnosisPage from '@/pages/diagnosis'
+import ResultPage from '@/pages/result'
 
 Vue.use(VueRouter)
 

@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import DiagnosisBox from '~/components/DiagnosisBox'
+import DiagnosisBox from '@/components/DiagnosisBox'
 
 export default {
   components: { DiagnosisBox }

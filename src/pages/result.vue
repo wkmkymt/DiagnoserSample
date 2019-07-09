@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import ResultArea from '~/components/ResultArea'
+import ResultArea from '@/components/ResultArea'
 
 export default {
   components: { ResultArea }

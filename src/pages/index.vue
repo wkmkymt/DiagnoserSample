@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import Explanation from '~/components/Explanation'
-import DiagnosisButton from '~/components/DiagnosisButton'
+import Explanation from '@/components/Explanation'
+import DiagnosisButton from '@/components/DiagnosisButton'
 
 export default {
   components: { Explanation, DiagnosisButton }
