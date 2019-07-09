@@ -1,5 +1,5 @@
 <template>
-  <header class="app-header" :class="{ 'is-top': $route.name === 'top' }">
+  <header class="app-header" :class="{ 'is-home': $route.name === 'home' }">
     <h1>
       <router-link to="/">ShindanDA!</router-link>
     </h1>
@@ -15,7 +15,7 @@ export default {}
   width: 100%;
 }
 
-.app-header.is-top {
+.app-header.is-home {
   padding: 48px 0;
 }
 
@@ -32,7 +32,7 @@ export default {}
   transition: 0.6s All ease;
 }
 
-.app-header.is-top a {
+.app-header.is-home a {
   font-size: 300%;
 }
 
@@ -41,7 +41,7 @@ export default {}
     font-size: 120%;
   }
 
-  .app-header.is-top a {
+  .app-header.is-home a {
     font-size: 180%;
   }
 }
